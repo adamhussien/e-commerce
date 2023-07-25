@@ -1,0 +1,81 @@
+.jewellery{
+&__title{
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--color-prime);
+
+}
+    .jewe{
+   margin: auto 3rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   gap: 2rem;
+   justify-content: center;
+   align-content: center;
+    .card{
+        display: flex;
+        flex-direction: column;
+text-align: center;
+padding: 2rem;
+background-color: #ffffff;
+box-shadow: 0px 25px 20px  #1687d933;
+border-radius: 1.3rem;
+transition: all 0.5s;
+&__stars{
+    margin: 1rem;
+    & i:not(:last-child){
+       color: gold;
+    }
+}
+&__img{
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    height: auto;
+     }
+     &__title{
+     font-size: 1.2rem;
+     font-weight: 600;
+     font-family: italic;
+     padding: .9rem;
+     color: var( --color-grey)
+     }
+     &__price{
+font-size: 1.1rem;
+font-weight: 700;
+color: var( --color-grey);
+     }
+     &__btn{
+        font-weight: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #0066CC;
+        padding: 1rem 1.3rem;
+        text-decoration: none;
+        border: 2px solid #0066cc;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 50px;
+        transition : 1000ms;
+        transform: translateY(0);
+       
+        cursor: pointer;
+        &:hover{
+        
+            transition : 1000ms;
+            padding: 10px 50px;
+            transform : translateY(-0px);
+            background-color: #fff;
+            color: #0066cc;
+            border: solid 2px #0066cc;
+            }
+        }
+     &:hover{
+       transform: translateY(-2rem) scale(1.1);
+       }
+
+    }
+}
+
+}

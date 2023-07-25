@@ -1,0 +1,132 @@
+.product{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 3rem auto;
+    max-width: 30rem;
+    padding: 3rem;
+    gap: 2rem;
+}
+     
+    .pro{
+
+    &__big-image{
+max-width:100%;
+  height: auto;
+  display: block;
+    }
+    .small{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+&__img {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: auto;
+    padding: 1rem 2rem;
+
+}
+    }
+
+ }
+ .details {
+   padding: 1rem;
+   &__title{
+    color: var(--color-prime);
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+    margin: 1.2rem;
+   }
+   & i:not(:last-child){
+   color: gold;
+   display: inline-block;
+   }
+   &__price {
+    font-weight: 700;
+    font-size: 1.1rem;
+   margin: 1rem;
+   padding: 1rem;
+   display: inline-block;
+    color: var( --color-grey);
+   }
+   &__select{
+    width: 100%;
+  border: none;
+  outline: none;
+    border-radius: 0.25em;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: var(--color-prime);
+
+   }
+   &__input{
+width: 100%;
+border: none;
+outline: none;
+margin: 1.2rem;
+padding: 1rem 1.2rem;
+border-radius: .66rem;
+background-color: var(--color-prime);
+transition: all 1s;
+&:hover,
+&:focus{
+    background-color:#F9B5D0 ;
+    transform: scale(1.3);
+}
+   }
+   &__btn{
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+   
+    cursor: pointer;
+    &:hover{
+    
+        transition : 1000ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 2px #0066cc;
+        }
+   }
+   &__info{
+    color: var(--color-grey);
+    margin: 1.2rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+   }
+   &__sub{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-grey);
+    text-transform: capitalize;
+   }
+ }
+
+@media screen and (max-width: 37.3em){
+    .small{
+        flex-direction: column;
+        &__img{
+            margin: .9rem;
+        }
+    }
+    .product{
+        width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+}

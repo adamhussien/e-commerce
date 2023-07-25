@@ -1,0 +1,85 @@
+.cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+grid-column-gap: 2rem;
+grid-row-gap: 1rem;
+justify-content: center;
+align-items: center;
+.item{
+
+    background-color:#ffffff;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.2);
+  padding: 1rem;
+   border-radius: 1.4rem;
+   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover img{
+transform: scale(1.1);
+  }
+  &__stars i{
+    color: gold;
+    
+}
+  &__img{
+    max-width: 100%;
+     height: auto;
+     transition: all .6s;
+ }
+
+
+&__title{
+  font-weight: 900;
+    font-size: 1.4rem; 
+    padding: .3rem;
+color: var(--color-prime);
+text-align: center;
+text-transform: capitalize;
+    }
+    &__price{
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: .3rem;
+        color: var(--color-grey);
+    }
+    &__text{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .9rem ;
+    }
+&__btn{
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    margin: .6rem;
+    transform: translateY(0);
+   
+    cursor: pointer;
+    &:hover{
+    
+        transition : 1000ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 2px #0066cc;
+        }
+    }
+   
+   }
+  
+   &:hover{
+    transform: translateY(-3px) scale(1.0);
+
+}
+
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sass": "^1.63.6"
+  },
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "shopping-website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": " node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "adam",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,104 @@
+
+.navbar {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #eeeded00;
+     box-shadow: 0 1px 2px rgba(0,0,0,.06);
+     min-height: 6rem;
+     width: 100%;
+
+    }
+    .navbar .card {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #3AA6B9;
+    position: relative;
+   margin: 2rem;
+    border: none;
+    }
+    .navbar .card span {
+position: absolute;
+top: -1.5rem;
+right: -16px;
+color: red;
+font-weight: bold;
+    }
+    .navbar .menu{
+      display: flex;
+     height: 100%;
+    }
+    .navbar .menu li {
+      list-style: none;
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+    
+    }
+    .menu li a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color:var( --color-grey);
+      transition: all 0.5s;
+      font-weight: 900;
+      padding: .4rem;
+      text-transform: capitalize;
+      position: relative;
+    }
+  
+    .menu li a:hover{
+color: var(--color-prime);
+    }
+    .ham span {
+      display: flex;
+      flex-direction: column;
+      width: 3.3rem;
+      height: 3px;
+      background-color: #3AA6B9;
+      margin: .8rem;
+    }
+    .ham {
+    display: none;
+    cursor: pointer;
+    }
+    .close{
+      display: none;
+      position: absolute;
+      top: 1rem;
+      right: -2rem;
+     color: var(--color-prime);
+    }
+    @media screen and (max-width:50em) {
+      .navbar{
+        width: 100%;
+      }
+    
+      .ham{
+        display: block;
+      }
+      .menu{
+        display: flex;
+       align-items: flex-start;
+        flex-direction: column;
+        background-color: #fff;
+        color: #000;
+      left: -100%;
+     top: 0;
+position: fixed;
+z-index: 999;
+    width: 50%;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+    
+      }
+      .menu li a{
+       color: var(--color-grey);
+      
+      }
+      .menu.active{
+    left: 0;
+      }
+    .close{
+        display: block;
+    }
+    }
+    
